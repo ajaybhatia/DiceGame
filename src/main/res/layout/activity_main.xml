@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_even"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:text="Even" />
+
+    <Button
+        android:id="@+id/btn_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Roll" />
+
+    <Button
+        android:id="@+id/btn_odd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Odd" />
+
+    <TextView
+        android:id="@+id/tv_cpu"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="CPU: 0" />
+
+    <TextView
+        android:id="@+id/tv_you"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="You: 0" />
+
+    <ImageView
+        android:id="@+id/iv_dice1"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="180dp"
+        android:paddingLeft="20dp"
+        app:srcCompat="@drawable/die_face_6" />
+
+    <ImageView
+        android:id="@+id/iv_dice2"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/iv_dice1"
+        android:layout_marginStart="80dp"
+        android:paddingRight="20dp"
+        app:srcCompat="@drawable/die_face_1" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_cpu"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
